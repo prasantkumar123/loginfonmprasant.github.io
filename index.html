@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>loginform</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Kaushan+Script&display=swap" rel="stylesheet">
+
+
+    </head>
+    <body>
+        <div class="hero">
+            <div class="formbox">
+            
+            <div class="btnbox">
+        <div id="btntop"></div>
+                <button type="button" class="btntype" onclick="log()">Sign in</button>
+                <button type="button" class="btntype" onclick="reg()">Register</button>
+                </div>
+             
+            <form class="loginForm" id="login">
+                <input type="email" class="inputbox" placeholder="emailId" required>
+                <input type="text" class="inputbox" placeholder="Facebook profile link/ mobile number" required>
+                <input type="password" class="inputbox" placeholder="password" required>
+                <input type="checkbox" id="checkbox"><span id="check">Remember password</span>
+         <button type="submit" class="submitBtn">Sign in</button>
+         <footer>&copy; Prasant2020</footer>
+                 
+            </form>
+            <div class="socialIcon">
+             
+                 <img src="https://www.iconfinder.com/data/icons/social-media-circle-long-shadow/1024/facebook-512.png">
+                 <img src="https://www.iconfinder.com/data/icons/social-media-circle-long-shadow/1024/instagram-256.png">
+                 <img src="https://www.iconfinder.com/data/icons/social-media-circle-long-shadow/1024/twitter-256.png">
+                 <img src="https://prasantsahoo.simdif.com/images/th/sd_5e7f07b38d946.png?nocache=1593840378" style="height:30px; width:30px;">
+                 
+             </div>
+             <form class="loginForm" id="register">
+                <input type="email" class="inputbox" placeholder="emailId" required>
+                <input type="text" class="inputbox" placeholder="Facebook profile link/ mobile number" required>
+                <input type="password" class="inputbox" placeholder="password" required>
+                <input type="checkbox" id="checkbox"><span id="check">I agree with all <a href="https://code.sololearn.com/W0fd3OyEv9ig/?ref=app">terms and conditions</a></span>
+         <button type="submit" class="submitBtn">Register</button>
+         
+         <footer>&copy; Prasant2020</footer>
+                 
+            </form>
+        
+             </div>
+    
+            </div>
+        </div>
+      
+<script>
+alert ("don't forget to listen the background music. Tap on the screen and wait a while for background music. \n Please wait a while after clicking ok to load the page completely");
+var l= document.getElementById("login");
+var r= document.getElementById("register");
+var b= document.getElementById("btntop");
+
+function reg(){
+    l.style.left ="-100vw";
+    r.style.left ="5vw";
+    r.style.display ="block";
+    b.style.left ="40vw";
+}
+function log(){
+    l.style.left ="5vw";
+    
+    r.style.left ="100vw";
+    
+    b.style.left ="0";
+}
+</script>  
+   <audio src="https://dl.dropbox.com/s/6kbfhwjlkxzqufx/03%20Baatein%20Ye%20Kabhi%20Na%20-%20Khamoshiyan%20%28Arijit%20Singh%29%20190Kbps.mp3?dl=1","  loop="loop" id="music">
+  </audio>
+  
+  <script>
+  var music = document.getElementById("music")
+  music.load();
+  document.addEventListener("click", function() {
+  music.play()
+  })
+  </script> 
+
+    </body>
+</html>
